@@ -100,6 +100,10 @@ def spread_int32_to_int64(v: int) -> int:
 score = interleave(normalized_latitude, normalized_longitude)
 ```
 
+Here's a visual description of the spread algorithm:
+![spread](./media/Spread.gif)
+
+
 # Decoding
 
 Decoding a score converts it back to the original latitude and longitude values. This is essentially the reverse of the encoding process.
@@ -152,6 +156,9 @@ def compact_int64_to_int32(v: int) -> int:
     
     return v
 ```
+
+Here's a visual description of the compaction algorithm:
+![compaction](./media/Compact.gif)
 
 ## Step 3: Converting Back to Geographic Coordinates
 
